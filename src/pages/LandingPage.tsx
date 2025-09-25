@@ -1161,10 +1161,10 @@ const ContactSection = () => {
       };
 
       const response = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_js4gvw9',
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_gex7z2c',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID ,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID ,
         templateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '4KgIw-Y2X_OeAM3Td'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY ,
       );
 
       console.log('EmailJS Response:', response);
